@@ -1,0 +1,20 @@
+
+html * {margin:0; padding:0;}
+body {margin:2em; font:0.83em verdana,arial,sans-serif;}
+
+h1 {font-size:1.7em;}
+div {border-radius:8px;}
+div#hue, div#saturation, div#brightness, div#r, div#g, div#b, div#final {width:200px;height:150px;background:#ccc; border:1px solid #ccc; padding:10px; float:left; margin-right:20px;}
+div#r, div#g, div#b, div#final {background:#000; color:#fff; margin-top:30px;}
+div#hue, div#saturation, div#brightness {height:35px; margin-top:30px;}
+div#hue {clear:both;}
+span {margin-left:10px; position:relative; top:-4px;}
+div#outputcont {margin-top:30px; float:left;}
+div#outputcont div {margin-bottom:20px;}
+div#colourinputcont {clear:both; padding-top:30px;}
+input:hover {cursor:pointer;}
+input#colourinput {width:82px; height:18px; border:1px solid #999; padding:1px; font-size:14px;}
+input#colourinput:hover {cursor:auto;}
+input#sub {width:30px; border:1px solid #999; height:22px;}
+input#colourinput, input#sub {border-radius:4px;}
+div#error {margin-top:20px; color:#c00;}
