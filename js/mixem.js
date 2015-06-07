@@ -103,30 +103,30 @@ var CM = {
 
 	update: function() {
 
-		document.getElementById("slider_r").value = CM.aRGB[0];
-		document.getElementById("slider_g").value = CM.aRGB[1];
-		document.getElementById("slider_b").value = CM.aRGB[2];
+		document.getElementById("slider_r").value = this.aRGB[0];
+		document.getElementById("slider_g").value = this.aRGB[1];
+		document.getElementById("slider_b").value = this.aRGB[2];
 
-		document.getElementById("slider_hue").value = CM.aHSV[0];
-		document.getElementById("slider_saturation").value = CM.aHSV[1];
-		document.getElementById("slider_brightness").value = CM.aHSV[2];
+		document.getElementById("slider_hue").value = this.aHSV[0];
+		document.getElementById("slider_saturation").value = this.aHSV[1];
+		document.getElementById("slider_brightness").value = this.aHSV[2];
 
-		document.getElementById("val_r").innerHTML = CM.aRGB[0];
-		document.getElementById("val_g").innerHTML = CM.aRGB[1];
-		document.getElementById("val_b").innerHTML = CM.aRGB[2];
+		document.getElementById("val_r").innerHTML = this.aRGB[0];
+		document.getElementById("val_g").innerHTML = this.aRGB[1];
+		document.getElementById("val_b").innerHTML = this.aRGB[2];
 
-		document.getElementById("val_hue").innerHTML = CM.aHSV[0];
-		document.getElementById("val_saturation").innerHTML = CM.aHSV[1];
-		document.getElementById("val_brightness").innerHTML = CM.aHSV[2];
+		document.getElementById("val_hue").innerHTML = this.aHSV[0];
+		document.getElementById("val_saturation").innerHTML = this.aHSV[1];
+		document.getElementById("val_brightness").innerHTML = this.aHSV[2];
 
-		document.getElementById("r").style.backgroundColor = "rgb(" + CM.aRGB[0] + ",0,0)";
-		document.getElementById("g").style.backgroundColor = "rgb(0," + CM.aRGB[1] + ",0)";
-		document.getElementById("b").style.backgroundColor = "rgb(0,0," + CM.aRGB[2] + ")";
+		document.getElementById("r").style.backgroundColor = "rgb(" + this.aRGB[0] + ",0,0)";
+		document.getElementById("g").style.backgroundColor = "rgb(0," + this.aRGB[1] + ",0)";
+		document.getElementById("b").style.backgroundColor = "rgb(0,0," + this.aRGB[2] + ")";
 
-		document.getElementById("final").style.backgroundColor = "rgb(" + CM.aRGB[0] + "," + CM.aRGB[1] + "," + CM.aRGB[2] + ")";
+		document.getElementById("final").style.backgroundColor = "rgb(" + this.aRGB[0] + "," + this.aRGB[1] + "," + this.aRGB[2] + ")";
 
-		document.getElementById("rgbout").innerHTML = "rgb(" + CM.aRGB.join(",") + ")";
-		document.getElementById("hexout").innerHTML = "#" + CM.dec2hex(CM.aRGB[0], CM.aRGB[1], CM.aRGB[2]);
+		document.getElementById("rgbout").innerHTML = "rgb(" + this.aRGB.join(",") + ")";
+		document.getElementById("hexout").innerHTML = "#" + this.dec2hex(this.aRGB[0], this.aRGB[1], this.aRGB[2]);
 	},
 
 
@@ -169,7 +169,7 @@ var CM = {
 
 			if ( ! rValidRGB.test(sColour)) {
 
-				CM.errorDisplay("RGB triplet is not in the correct format. (e.g. 200, 100, 50)");
+				CM.errorDisplay("RGB triplet is not in the correct format. (e.g. 200,100,50)");
 				return;
 			}
 
