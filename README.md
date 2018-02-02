@@ -1,22 +1,19 @@
 
 # Mixem
 
-###  RGB - HSV colour mixer.
+####  RGB - HSV colour mixer.
 
 
 ## Background
 
 I usually find it easier to create a custom colour with HSV, and use RGB for reference.
 
-To do this, I wanted a simple and minimal browser tool (no dependencies).
+To do this, I wanted a simple and minimal browser tool, with no dependencies.
 
 
-## Example
+## [Demonstration](https://tinram.github.io/mixem.html)
 
-[1]: https://tinram.github.io/images/mixem.gif
-![Demo. logo][1]
-
-[Demonstration](https://tinram.github.io/mixem.html).
+[![Demo](https://tinram.github.io/images/mixem.gif)](https://tinram.github.io/mixem.html)
 
 
 ## License
