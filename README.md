@@ -1,12 +1,12 @@
 
 # Mixem
 
-####  RGB - HSV colour mixer.
+####  RGB and HSV colour mixer.
 
 
 ## Background
 
-I usually find it easier to create a custom colour with HSV, and use RGB for reference.
+Usually, I find it easier to create a custom colour with HSV, and use RGB for reference.
 
 To do this, I wanted a simple and minimal browser tool, with no dependencies.
 
